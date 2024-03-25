@@ -33,6 +33,30 @@
       main section {
         animation: fadeIn 1s ease-out;
       }
+
+      .hacking-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .hacking-image {
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .hacking-title {
+        font-size: 32px; /* Adjust the font size as needed */
+        margin-bottom: 10px;
+      }
+
+      .hacking-text {
+        font-size: 20px;
+      }
     </style>
   </head>
   <body>
@@ -40,15 +64,22 @@
       <h1>XSS-BRUTO</h1>
       <nav id="options">
         <ul>
-          <li><a href="about">About</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
         <h2>Home</h2>
-        Change is coming. Join us.
+        <p>Change is coming. Join us.</p>
+      </section>
+      <section class="hacking-section">
+        <h2 class="hacking-title">Hacking</h2>
+        <img src="hck.jpg" alt="Hacking Image" class="hacking-image">
+        <p class="hacking-text">
+          Hacking is the unauthorized access to or control over computer systems or networks. It can be used for both malicious purposes and to uncover vulnerabilities for improving system security. Ethical hackers, also known as white-hat hackers, use hacking skills to identify and fix security flaws.
+        </p>
       </section>
     </main>
     <script src="scripts.js"></script>

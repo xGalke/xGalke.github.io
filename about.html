@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XSS-BRUTO - About</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <style>
-      /* Define animations */
-      @keyframes slideInFromLeft {
-        0% {
-          transform: translateX(-100%);
+        /* Define animations */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
         }
-        100% {
-          transform: translateX(0);
-        }
-      }
 
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
-        100% {
-          opacity: 1;
+
+        /* Apply animations */
+        header {
+            animation: slideInFromLeft 1s ease-out;
         }
-      }
 
-      /* Apply animations */
-      header {
-        animation: slideInFromLeft 1s ease-out;
-      }
+        main section {
+            animation: fadeIn 1s ease-out;
+        }
 
-      main section {
-        animation: fadeIn 1s ease-out;
-      }
+        .about-content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .about-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
     </style>
-  </head>
-  <body>
-    <header>
-      <h1>XSS-BRUTO</h1>
-      <nav id="options">
+</head>
+<body>
+<header>
+    <h1>XSS-BRUTO</h1>
+    <nav id="options">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
+    </nav>
+</header>
+<main>
+    <section class="about-content">
         <h2>About Us</h2>
+        <p>Welcome to XSS-BRUTO!</p>
+        <p>We are a team of developers and cybersecurity enthusiasts. Our goal is to create secure and robust web applications while raising awareness about potential vulnerabilities like cross-site scripting (XSS).</p>
         <p># H4CK3R 4 A D3V3L0P3R #</p>
         <p>Bruto2009</p>
-      </section>
-    </main>
-    <script src="scripts.js"></script>
-  </body>
+    </section>
+</main>
+<script src="scripts.js"></script>
+</body>
 </html>
