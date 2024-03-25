@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XSS-BRUTO</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Define animations */
+      @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /* Apply animations */
+      header {
+        animation: slideInFromLeft 1s ease-out;
+      }
+
+      main section {
+        animation: fadeIn 1s ease-out;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -19,7 +48,7 @@
     <main>
       <section>
         <h2>Home</h2>
-        Change is comming.
+        Change is coming. Join us.
       </section>
     </main>
     <script src="scripts.js"></script>

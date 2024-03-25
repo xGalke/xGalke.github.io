@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XSS-BRUTO - About</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Define animations */
+      @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /* Apply animations */
+      header {
+        animation: slideInFromLeft 1s ease-out;
+      }
+
+      main section {
+        animation: fadeIn 1s ease-out;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -20,12 +49,10 @@
     <main>
       <section>
         <h2>About Us</h2>
-                   # H4CK3R 4 A D3V3L0P3R #     
-				   
-				          Bruto2009
-
-  </section>
-</main>
-<script src="scripts.js"></script>
+        <p># H4CK3R 4 A D3V3L0P3R #</p>
+        <p>Bruto2009</p>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
   </body>
 </html>
