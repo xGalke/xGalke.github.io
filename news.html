@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XSS-TEAM - About</title>
+    <title>XSS-TEAM - News</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Define animations */
@@ -34,20 +34,33 @@
             animation: fadeIn 1s ease-out;
         }
 
-        .about-content {
-            text-align: center;
+        .blog-post {
             margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        .about-content h2 {
+        .blog-post h2 {
             font-size: 24px;
             margin-bottom: 10px;
+            /* Style for clickable title */
+            cursor: pointer;
+            color: #007bff; /* Blue color for links */
         }
 
-        .about-content p {
+        .blog-post h2:hover {
+            text-decoration: underline; /* Underline effect on hover */
+        }
+
+        .blog-post p {
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 20px;
+        }
+
+        .blog-post .author {
+            font-style: italic;
         }
     </style>
 </head>
@@ -64,12 +77,14 @@
     </nav>
 </header>
 <main>
-    <section class="about-content">
-        <h2>About Us</h2>
-        <p>Welcome to XSS-TEAM!</p>
-        <p>We are a team of developers and cybersecurity enthusiasts. Our goal is to create secure and robust web applications while raising awareness about potential vulnerabilities like cross-site scripting (XSS).</p>
-        <p># H4CK3R 4 A D3V3L0P3R #</p>
-        <p>Bruto2009</p>
+    <section>
+        <div class="blog-post">
+            <h2><a href="blogs/BLOG1/blog1.html">Anonymous puts target on crypto boss who oversaw $40bn price crash.</a></h2>
+        </div>
+        <div class="blog-post">
+            <h2><a href="blog2.html">Blog Post Title 2</a></h2>
+        </div>
+        <!-- Add more blog posts as needed -->
     </section>
 </main>
 <script src="scripts.js"></script>
